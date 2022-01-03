@@ -1,0 +1,73 @@
+.content_container {
+    border: 20px;
+    border-color: white;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h3 {
+    margin: 0;
+}
+
+.token_field {
+    color: white;
+    background-color: grey;
+    border-radius: 1%;
+    width: 90%;
+    padding: 2%;
+    margin: 2%;
+}
+
+.user_id {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.user_token {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.submit_btn {
+    background-color: white;
+    color: black;
+    padding: 1%;
+    border: none;
+    /* transition-delay: .1s; */
+}
+
+.submit_btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.display_hrate {
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    width: 90%;
+    background-color: grey;
+    margin: 2%;
+}
+
+.each_hrate {
+    display: flex;
+    margin: .2%;
+}
+
+.each_hrate h4 {
+    color: white;
+    margin: 0;
+}

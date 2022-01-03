@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- {% block title %}
+    Mini Project
+{% endblock %} -->
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'web_app/run.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="content_container">
+    <div class="file_upload">
+        <h3>Upload The File Here</h3>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" class="choose_file" name="myfile" />
+            <input type="submit" class="submit_btn" name="submit" value="Upload" />
+            <!-- <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file" name="my_file" /> -->
+        </form>
+    </div>
+    <div class="images_container">
+        {% for img in image_list %}
+        <div class="display_img">
+            <img src="{% static img.0 %}" alt="{{ image_alt }}">
+            <div class="img_res">
+                <h3>{{ img.1 }}</h3>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

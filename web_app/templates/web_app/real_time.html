@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'web_app/real_time.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="content_container">
+    <div class="token_field">
+        <form method="post" >
+            <label for="user_id"><h3>User ID</h3></label>
+            <input type="text" class="user_id" name="user_id"><br>
+            <label for="user_token"><h3>User Token</h3></label>
+            <input type="text" class="user_token" name="user_token"><br><br>
+            <input type="submit" class="submit_btn" value="Submit">
+        </form>
+    </div>
+    {% for i in img %}
+    <div class="steps_chart">
+        <img src="{% static i %}" >
+    </div>
+    {% endfor %}
+    <div class="display_hrate">
+        {% for i in l_list %}
+        <div class="each_hrate">
+            <h4>Time : {{ i.0 }} ------ Heart Rate : {{ i.1 }}</h4>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

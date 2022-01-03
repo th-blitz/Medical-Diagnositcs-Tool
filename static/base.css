@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'KoHo', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.main_container {
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(home_img.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     background-color: #000000;
+}
+
+.title_line {
+    height: 1px;
+    background-color:white;
+    width: 75%;
+    border-radius: 100%;
+}
+
+.nav_bar h1 {
+    color: white;
+    margin: 1%;
+}
+
+.nav_pannel {
+    z-index: 1;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: .5%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav_btn h4 {
+    margin: 0;
+}
+
+.nav_btn {
+    border: none;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%;
+    border-color: black;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    font-size: 100%;
+    /* transition-duration: 0.1s; */
+}
+.nav_btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.nav_btn.active {
+    background-color: white;
+    color: black;
+}
